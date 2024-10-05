@@ -1,19 +1,19 @@
 /* Configurações gerais */
 body {
-    font-family: 'Georgia', serif; /* Fonte clássica, serifada, remete a elegância e tradição */
+    font-family: 'Helvetica Neue', sans-serif; /* Fonte moderna e limpa */
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #FAF3E0; /* Fundo creme claro */
-    color: #2E4A62; /* Azul Escuro */
+    background: #F5F5F5; /* Fundo cinza claro neutro */
+    color: #4F4F4F; /* Texto em cinza médio */
 }
 
 /* Header */
 header {
-    background-color: #A3B9D3; /* Azul Pastel */
+    background-color: #3DADB8; /* Turquesa Suave */
     text-align: center;
     padding: 30px 0;
-    border-bottom: 3px solid #C9A567; /* Linha dourada para destacar o cabeçalho */
+    border-bottom: 3px solid #8FB399; /* Linha verde suave */
 }
 
 .header-container {
@@ -28,15 +28,17 @@ header {
 }
 
 h1 {
-    color: #2E4A62; /* Azul Escuro */
-    font-size: 2rem;
+    color: #FFFFFF; /* Cor do texto do título principal */
+    font-size: 2.5rem;
+    margin: 10px 0;
+    font-weight: bold;
 }
 
 /* Navegação */
 nav {
-    background-color: #A3B9D3; /* Azul Pastel */
+    background-color: #3DADB8; /* Turquesa Suave */
     padding: 15px 0;
-    border-bottom: 2px solid #C9A567; /* Linha dourada suave */
+    border-bottom: 2px solid #8FB399; /* Linha verde suave */
 }
 
 .nav-links {
@@ -49,7 +51,7 @@ nav {
 }
 
 .nav-links a {
-    color: #2E4A62; /* Azul Escuro */
+    color: #FFFFFF; /* Texto dos links em branco */
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
@@ -57,14 +59,14 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #C9A567; /* Dourado Claro no hover */
-    border-bottom: 2px solid #C9A567; /* Linha dourada para indicar o link */
+    color: #8FB399; /* Verde suave no hover */
+    border-bottom: 2px solid #8FB399; /* Linha verde suave */
 }
 
 /* Conteúdo Principal */
 main {
     padding: 50px 20px;
-    background-color: #FAF3E0; /* Fundo creme claro */
+    background-color: #F5F5F5; /* Fundo cinza claro */
 }
 
 section {
@@ -75,33 +77,45 @@ section {
 h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #2E4A62; /* Azul Escuro */
+    color: #333333; /* Grafite Escuro */
     position: relative;
+    padding-bottom: 15px;
+}
+
+h2::before,
+h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #3DADB8; /* Linha turquesa */
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2::before {
+    top: -20px;
 }
 
 h2::after {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background-color: #C9A567; /* Linha decorativa dourada */
-    display: block;
-    margin: 10px auto 0 auto;
-    border-radius: 2px;
+    bottom: -20px;
 }
 
 /* Destaque para a seção inicial */
 .highlight-section {
-    background-color: #E9E3D6; /* Bege mais claro para destacar */
+    background-color: #FFFFFF; /* Branco para destacar */
     padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
     font-style: italic;
+    border: 2px solid #3DADB8; /* Borda turquesa */
 }
 
 .highlight-section p {
     font-size: 1.2rem;
-    color: #2E4A62;
+    color: #4F4F4F; /* Cinza médio */
     line-height: 1.8;
 }
 
@@ -117,26 +131,29 @@ h2::after {
 .artesanato-gallery img {
     max-width: 220px;
     border-radius: 8px;
+    border: 3px solid #C19A6B; /* Borda marrom claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .artesanato-gallery img:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Seção Sobre */
 #sobre {
-    background-color: #E9E3D6; /* Bege mais claro */
+    background-color: #FFFFFF; /* Branco para destacar */
     padding: 40px;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 50px;
+    border: 2px solid #3DADB8; /* Borda turquesa */
 }
 
 #sobre p {
     font-size: 1.2rem;
-    color: #2E4A62;
+    color: #4F4F4F; /* Cinza médio */
     line-height: 1.8;
 }
 
@@ -144,71 +161,132 @@ h2::after {
 .button {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #C9A567; /* Dourado Claro */
+    background-color: #8FB399; /* Verde suave */
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
+    border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: #2E4A62; /* Azul Escuro no hover */
+    background-color: #333333; /* Grafite escuro no hover */
     transform: scale(1.05);
 }
 
-/* Footer (Rodapé) */
+/* Footer */
 footer {
-    background-color: #A3B9D3; /* Azul Pastel */
-    color: #2E4A62;
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 3px solid #C9A567; /* Linha dourada para destacar o rodapé */
+    background-color: #333333; /* Cinza escuro para contraste */
+    color: #FFFFFF; /* Texto em branco */
+    padding: 50px 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
-.footer-container {
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
-.footer-container p {
-    margin: 0;
-    font-size: 1rem;
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
 }
 
-.footer-container a {
-    color: #2E4A62; /* Azul Escuro */
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #FFDA77; /* Amarelo suave para destaque */
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-container a:hover {
-    color: #C9A567; /* Dourado Claro no hover */
+.footer-section ul li a:hover {
+    color: #FFDA77; /* Amarelo suave no hover */
 }
 
-/* Redes Sociais no Rodapé */
-.social-media {
+.social-icons {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 15px;
 }
 
-.social-icon {
-    color: #2E4A62; /* Azul Escuro */
-    font-size: 1.8rem;
+.social-icons a {
+    color: #FFFFFF;
+    font-size: 1.5rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icon:hover {
-    color: #C9A567; /* Dourado Claro no hover */
+.social-icons a:hover {
+    color: #FFDA77; /* Amarelo suave no hover */
     transform: scale(1.1);
 }
 
+.footer-section.contact p {
+    margin: 0 0 10px;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+}
+
+.footer-section.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section.newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.footer-section.newsletter button {
+    padding: 10px;
+    background-color: #FFDA77; /* Amarelo suave */
+    color: #333333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-section.newsletter button:hover {
+    background-color: #FFFFFF; /* Branco no hover */
+    color: #333333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+    font-size: 0.8rem;
+    color: #BBBBBB; /* Cinza claro para menos destaque */
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-links {

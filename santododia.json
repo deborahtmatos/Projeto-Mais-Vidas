@@ -20,7 +20,11 @@
         "historia": "Hoje, dia 4 de outubro, a Igreja Católica celebra São Francisco de Assis, conhecido como o padroeiro dos animais, do meio ambiente e um exemplo de humildade e amor aos pobres. São Francisco é amplamente reverenciado por sua vida dedicada à simplicidade e ao cuidado com a criação de Deus.",
         "imagem": "imagem/sao-francisco.png"
     },
-
+    "10-05": {
+        "nome": "Santa Faustina Kowalska",
+        "historia": "No dia 5 de outubro, a Igreja Católica celebra Santa Faustina Kowalska, conhecida como a "Apóstola da Divina Misericórdia". Santa Faustina foi uma freira polonesa que teve visões de Jesus e foi instruída a promover a devoção à Divina Misericórdia. Sua vida e escritos inspiraram a festa da Divina Misericórdia, celebrada no segundo domingo da Páscoa.",
+        "imagem": "imagem/santa-faustina-kowaslka.jpg"
+    },
     "12-31": {
         "nome": "São Silvestre I",
         "historia": "São Silvestre I foi o papa durante o Concílio de Niceia e um dos primeiros a usar o título de 'Papa'."
