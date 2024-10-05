@@ -1,16 +1,19 @@
-// Seleciona o botão e a div que contém as redes sociais
-const socialMediaButton = document.getElementById('socialMediaButton');
-const socialMediaDiv = document.getElementById('socialMedia');
+// Scroll suave ao clicar nos links de navegação
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-// Adiciona um evento de clique ao botão
-socialMediaButton.addEventListener('click', function () {
-    // Alterna a visibilidade da div com redes sociais
-    socialMediaDiv.classList.toggle('visible');
-    
-    // Atualiza o texto do botão de acordo com a visibilidade da div
-    if (socialMediaDiv.classList.contains('visible')) {
-        socialMediaButton.textContent = 'Esconder Redes Sociais';
-    } else {
-        socialMediaButton.textContent = 'Mostrar Redes Sociais';
-    }
+// Animação de entrada para as seções
+window.addEventListener('scroll', function () {
+    document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < window.innerHeight - 100) {
+            section.classList.add('visible');
+        }
+    });
 });
