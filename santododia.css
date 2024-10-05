@@ -1,0 +1,137 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fundo Cinza Claro */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #A3C1DA; /* Azul Pastel Claro */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Logo */
+header .logo {
+    max-width: 170px; /* Tamanho Máximo do Logo */
+    height: auto;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #C3B1E1; /* Lavanda */
+    margin-bottom: 20px; /* Espaço abaixo da navegação */
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background-color: #F0E2D1; /* Bege Claro */
+    text-align: center;
+}
+
+/* Calendário */
+#calendario {
+    padding: 20px;
+    background-color: #F0E2D1; /* Bege Claro */
+    margin: 10px auto; /* Margem automática */
+    max-width: 400px; /* Largura máxima para o calendário */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+#calendario h2 {
+    color: #4b0082; /* Roxo Escuro */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendario th, #calendario td {
+    padding: 10px;
+    text-align: center;
+}
+
+#calendario th {
+    background-color: #A3C1DA; /* Azul Pastel Claro */
+    color: white;
+}
+
+#calendario td {
+    background-color: #ffffff; /* Fundo Branco */
+}
+
+#calendario td.today {
+    background-color: #F8C8DC; /* Rosa Pastel para o dia atual */
+    font-weight: bold;
+}
+
+#calendario td.santo {
+    background-color: #C3E8E0; /* Verde Menta para os dias com santo */
+    font-weight: bold;
+}
+
+#calendario td:not(.today):not(.santo):hover {
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+    cursor: pointer;
+}
+
+/* Informações do Santo */
+#santo-info {
+    padding: 20px;
+    background-color: #F0E2D1; /* Bege Claro */
+}
+
+#santo-nome {
+    color: #4b0082; /* Roxo Escuro */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#santo-historia {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Formulário de data */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ececec; /* Cinza Claro */
+    padding: 10px;
+    text-align: center;
+}
