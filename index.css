@@ -1,19 +1,24 @@
 /* Configurações gerais */
 body {
-    font-family: 'Helvetica Neue', sans-serif; /* Fonte moderna e limpa */
-    line-height: 1.6;
+    font-family: 'Arial', 'Verdana', sans-serif;
+    /* Fonte de fácil leitura e sem serifa */
+    line-height: 1.8; /* Aumentar o espaçamento para facilitar a leitura */
     margin: 0;
     padding: 0;
-    background: #F5F5F5; /* Fundo cinza claro neutro */
-    color: #4F4F4F; /* Texto em cinza médio */
+    background: #F5F5F5;
+    /* Fundo cinza claro neutro */
+    color: #333333;
+    /* Texto em cinza escuro para melhor contraste */
 }
 
 /* Header */
 header {
-    background-color: #3DADB8; /* Turquesa Suave */
+    background-color: #3DADB8;
+    /* Turquesa Suave */
     text-align: center;
     padding: 30px 0;
-    border-bottom: 3px solid #8FB399; /* Linha verde suave */
+    border-bottom: 3px solid #8FB399;
+    /* Linha verde suave */
 }
 
 .header-container {
@@ -28,17 +33,20 @@ header {
 }
 
 h1 {
-    color: #FFFFFF; /* Cor do texto do título principal */
-    font-size: 2.5rem;
+    color: #FFFFFF;
+    /* Cor do texto do título principal */
+    font-size: 2.2rem;
     margin: 10px 0;
     font-weight: bold;
 }
 
 /* Navegação */
 nav {
-    background-color: #3DADB8; /* Turquesa Suave */
+    background-color: #3DADB8;
+    /* Turquesa Suave */
     padding: 15px 0;
-    border-bottom: 2px solid #8FB399; /* Linha verde suave */
+    border-bottom: 2px solid #8FB399;
+    /* Linha verde suave */
 }
 
 .nav-links {
@@ -51,35 +59,43 @@ nav {
 }
 
 .nav-links a {
-    color: #FFFFFF; /* Texto dos links em branco */
+    color: #FFFFFF;
+    /* Texto dos links em branco */
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Verdana', sans-serif;
     padding: 10px 15px;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #8FB399; /* Verde suave no hover */
-    border-bottom: 2px solid #8FB399; /* Linha verde suave */
+    color: #8FB399;
+    /* Verde suave no hover */
+    border-bottom: 2px solid #8FB399;
+    /* Linha verde suave */
 }
 
 /* Conteúdo Principal */
 main {
     padding: 50px 20px;
-    background-color: #F5F5F5; /* Fundo cinza claro */
+    background-color: #F5F5F5;
+    /* Fundo cinza claro */
 }
 
 section {
     margin-bottom: 50px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #333333; /* Grafite Escuro */
+    color: #333333;
+    /* Grafite Escuro */
     position: relative;
     padding-bottom: 15px;
+    font-weight: bold;
 }
 
 h2::before,
@@ -87,7 +103,8 @@ h2::after {
     content: '';
     width: 50px;
     height: 5px;
-    background-color: #3DADB8; /* Linha turquesa */
+    background-color: #3DADB8;
+    /* Linha turquesa */
     display: block;
     position: absolute;
     left: 50%;
@@ -104,19 +121,22 @@ h2::after {
 
 /* Destaque para a seção inicial */
 .highlight-section {
-    background-color: #FFFFFF; /* Branco para destacar */
+    background-color: #FFFFFF;
+    /* Branco para destacar */
     padding: 40px 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
-    font-style: italic;
-    border: 2px solid #3DADB8; /* Borda turquesa */
+    border: 2px solid #3DADB8;
+    /* Borda turquesa */
 }
 
 .highlight-section p {
-    font-size: 1.2rem;
-    color: #4F4F4F; /* Cinza médio */
+    font-size: 1.3rem;
+    color: #333333;
+    /* Cinza escuro para melhor legibilidade */
     line-height: 1.8;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* Galeria de Imagens */
@@ -131,7 +151,8 @@ h2::after {
 .artesanato-gallery img {
     max-width: 220px;
     border-radius: 8px;
-    border: 3px solid #C19A6B; /* Borda marrom claro */
+    border: 3px solid #C19A6B;
+    /* Borda marrom claro */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -143,45 +164,53 @@ h2::after {
 
 /* Seção Sobre */
 #sobre {
-    background-color: #FFFFFF; /* Branco para destacar */
+    background-color: #FFFFFF;
+    /* Branco para destacar */
     padding: 40px;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 50px;
-    border: 2px solid #3DADB8; /* Borda turquesa */
+    border: 2px solid #3DADB8;
+    /* Borda turquesa */
 }
 
 #sobre p {
-    font-size: 1.2rem;
-    color: #4F4F4F; /* Cinza médio */
+    font-size: 1.3rem;
+    color: #333333;
+    /* Cinza escuro */
     line-height: 1.8;
 }
 
 /* Botão */
 .button {
     display: inline-block;
-    padding: 12px 20px;
-    background-color: #8FB399; /* Verde suave */
+    padding: 14px 22px;
+    background-color: #8FB399;
+    /* Verde suave */
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
     border: none;
+    font-size: 1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: #333333; /* Grafite escuro no hover */
+    background-color: #333333;
+    /* Grafite escuro no hover */
     transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: #333333; /* Cinza escuro para contraste */
-    color: #FFFFFF; /* Texto em branco */
+    background-color: #333333;
+    /* Cinza escuro para contraste */
+    color: #FFFFFF;
+    /* Texto em branco */
     padding: 50px 20px;
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 .footer-content {
@@ -200,9 +229,10 @@ footer {
 }
 
 .footer-section h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 15px;
-    color: #FFDA77; /* Amarelo suave para destaque */
+    color: #FFDA77;
+    /* Amarelo suave para destaque */
     text-transform: uppercase;
 }
 
@@ -222,7 +252,8 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #FFDA77; /* Amarelo suave no hover */
+    color: #FFDA77;
+    /* Amarelo suave no hover */
 }
 
 .social-icons {
@@ -237,7 +268,8 @@ footer {
 }
 
 .social-icons a:hover {
-    color: #FFDA77; /* Amarelo suave no hover */
+    color: #FFDA77;
+    /* Amarelo suave no hover */
     transform: scale(1.1);
 }
 
@@ -257,7 +289,7 @@ footer {
 
 .footer-section.newsletter input[type="email"] {
     padding: 10px;
-    border: none;
+    border: 1px solid #CCCCCC;
     border-radius: 5px;
     outline: none;
     font-size: 1rem;
@@ -265,7 +297,8 @@ footer {
 
 .footer-section.newsletter button {
     padding: 10px;
-    background-color: #FFDA77; /* Amarelo suave */
+    background-color: #FFDA77;
+    /* Amarelo suave */
     color: #333333;
     border: none;
     border-radius: 5px;
@@ -275,7 +308,8 @@ footer {
 }
 
 .footer-section.newsletter button:hover {
-    background-color: #FFFFFF; /* Branco no hover */
+    background-color: #FFFFFF;
+    /* Branco no hover */
     color: #333333;
 }
 
@@ -284,9 +318,11 @@ footer {
     margin-top: 30px;
     border-top: 1px solid #444444;
     padding-top: 20px;
-    font-size: 0.8rem;
-    color: #BBBBBB; /* Cinza claro para menos destaque */
+    font-size: 0.9rem;
+    color: #BBBBBB;
+    /* Cinza claro para menos destaque */
 }
+
 /* Responsividade */
 @media (max-width: 768px) {
     .nav-links {
