@@ -7,37 +7,63 @@
     <title>Santo do Dia</title>
     <link rel="stylesheet" href="santododia.css">
     <script src="santododia.js" defer></script>
+    <!-- Link para Fonte Awesome (para ícones de redes sociais) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-    <img src="IMAGEM/Tania_Castro_Artesanatos_1.png" alt="Logo de Tania Castro Artesanatos" class="logo">
-</header>
+    <header>
+        <div class="header-container">
+            <img src="Tania_Castro_Artesanatos_1.png" alt="Logo de Tania Castro Artesanatos" class="logo">
+            <h1>Santo do Dia</h1>
+        </div>
+    </header>
 
-<nav>
-    <a href="index.html">Início</a>
-    <a href="artesanato.html">Artesanato</a>
-    <a href="oracoes.html">Orações</a>
-    <a href="santododia.html">Santo do Dia</a>
-</nav>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artesanato.html">Artesanato</a></li>
+            <li><a href="oracoes.html">Orações</a></li>
+            <li><a href="santododia.html">Santo do Dia</a></li>
+        </ul>
+    </nav>
 
-<main>
-    <section id="calendario">
-        <h2>Santo do Dia</h2>
-        <label for="data">Escolha uma data:</label>
-        <input type="date" id="data" name="data">
-    </section>
+    <main>
+        <section id="calendario" class="highlight-section">
+            <h2>Santo do Dia</h2>
+            <label for="data">Escolha uma data:</label>
+            <input type="date" id="data" name="data">
+        </section>
 
-    <section id="santo-info">
-        <h3 id="santo-nome">Nome do Santo</h3>
-        <p id="santo-historia">História do Santo...</p>
-    </section>
-</main>
+        <section id="santo-info" class="santo-info-container">
+            <img id="santo-imagem" src="" alt="Imagem do Santo" class="santo-imagem">
+            <div class="santo-texto">
+                <h3 id="santo-nome" class="santo-title">Nome do Santo</h3>
+                <p id="santo-historia" class="santo-description">História do Santo...</p>
+            </div>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
-</footer>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Artesanatos Católicos por Tania Castro. Todos os direitos reservados.</p>
+            <p>Entre em contato: <a href="mailto:taniacastrobh@gmail.com">taniacastrobh@gmail.com</a></p>
+            <!-- Redes sociais -->
+            <div class="social-media">
+                <a href="https://www.instagram.com/taniacastroartesanatos/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/tania.castro.9256" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/31995316594" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

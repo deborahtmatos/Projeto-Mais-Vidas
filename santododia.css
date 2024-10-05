@@ -2,136 +2,258 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo geral do corpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Fundo Cinza Claro */
+    font-family: 'Georgia', serif; /* Fonte clássica e tradicional */
+    background-color: #FAF3E0; /* Fundo creme claro */
+    color: #2E4A62; /* Azul Escuro */
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #A3C1DA; /* Azul Pastel Claro */
-    color: white;
-    padding: 15px 0;
+    background-color: #A3B9D3; /* Azul Pastel */
+    padding: 30px 0;
     text-align: center;
+    border-bottom: 3px solid #C9A567; /* Linha dourada */
 }
 
-/* Logo */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header .logo {
-    max-width: 170px; /* Tamanho Máximo do Logo */
+    max-width: 150px;
     height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #2E4A62; /* Azul Escuro */
 }
 
 /* Navegação */
 nav {
     display: flex;
     justify-content: center;
-    background-color: #C3B1E1; /* Lavanda */
-    margin-bottom: 20px; /* Espaço abaixo da navegação */
+    background-color: #A3B9D3; /* Azul Pastel */
+    border-bottom: 2px solid #C9A567; /* Linha dourada */
+    padding: 15px 0;
+    margin-bottom: 20px;
 }
 
-nav a {
-    color: white;
-    padding: 14px 20px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #2E4A62; /* Azul Escuro */
+    padding: 10px 15px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
-    color: black; /* Cor do texto ao passar o mouse */
+.nav-links a:hover {
+    color: #C9A567; /* Dourado Claro no hover */
+    border-bottom: 2px solid #C9A567; /* Linha dourada no hover */
 }
 
 /* Conteúdo principal */
 main {
-    padding: 20px;
-    background-color: #F0E2D1; /* Bege Claro */
+    padding: 50px 20px;
+    background-color: #FAF3E0; /* Fundo creme claro */
     text-align: center;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2E4A62; /* Azul Escuro */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #C9A567; /* Linha decorativa dourada */
+    display: block;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
 }
 
 /* Calendário */
 #calendario {
     padding: 20px;
-    background-color: #F0E2D1; /* Bege Claro */
-    margin: 10px auto; /* Margem automática */
-    max-width: 400px; /* Largura máxima para o calendário */
-    border-radius: 8px; /* Borda arredondada */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    background-color: #E9E3D6; /* Bege mais claro */
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #calendario h2 {
-    color: #4b0082; /* Roxo Escuro */
-    font-size: 24px;
+    font-size: 1.8rem;
+    color: #2E4A62; /* Azul Escuro */
     margin-bottom: 20px;
-    text-align: center;
 }
 
-#calendario table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-#calendario th, #calendario td {
-    padding: 10px;
-    text-align: center;
-}
-
-#calendario th {
-    background-color: #A3C1DA; /* Azul Pastel Claro */
-    color: white;
-}
-
-#calendario td {
-    background-color: #ffffff; /* Fundo Branco */
-}
-
-#calendario td.today {
-    background-color: #F8C8DC; /* Rosa Pastel para o dia atual */
-    font-weight: bold;
-}
-
-#calendario td.santo {
-    background-color: #C3E8E0; /* Verde Menta para os dias com santo */
-    font-weight: bold;
-}
-
-#calendario td:not(.today):not(.santo):hover {
-    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
-    cursor: pointer;
-}
-
-/* Informações do Santo */
-#santo-info {
-    padding: 20px;
-    background-color: #F0E2D1; /* Bege Claro */
-}
-
-#santo-nome {
-    color: #4b0082; /* Roxo Escuro */
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#santo-historia {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Formulário de data */
 label {
     display: block;
     margin-bottom: 10px;
+    color: #2E4A62; /* Azul Escuro */
 }
 
 input[type="date"] {
     padding: 8px;
     font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #C9A567; /* Borda dourada suave */
+}
+
+/* Informações do Santo */
+.santo-info-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #E9E3D6; /* Bege mais claro */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
+}
+
+.santo-imagem {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.santo-texto {
+    max-width: 600px;
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+}
+
+.santo-title {
+    color: #2E4A62; /* Azul Escuro */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.santo-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #2E4A62;
+}
+
+/* Botão */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #C9A567; /* Dourado Claro */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2E4A62; /* Azul Escuro no hover */
+    transform: scale(1.05);
 }
 
 /* Rodapé */
 footer {
-    background-color: #ececec; /* Cinza Claro */
-    padding: 10px;
+    background-color: #A3B9D3; /* Azul Pastel */
+    padding: 40px 20px;
     text-align: center;
+    border-top: 3px solid #C9A567; /* Linha dourada */
+    color: #2E4A62;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-container a {
+    color: #2E4A62; /* Azul Escuro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #C9A567; /* Dourado Claro no hover */
+}
+
+/* Redes sociais */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: #2E4A62; /* Azul Escuro */
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #C9A567; /* Dourado Claro no hover */
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 30px 10px;
+    }
+
+    .santo-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .santo-imagem {
+        margin-bottom: 15px;
+    }
 }
